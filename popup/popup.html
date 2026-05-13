@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Description Saver</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Save Job Posting</h1>
+
+    <div class="field">
+      <label for="company">Company</label>
+      <input type="text" id="company" placeholder="e.g. Intact">
+    </div>
+
+    <div class="field">
+      <label for="title">Job Title</label>
+      <input type="text" id="title" placeholder="e.g. Business Analyst I">
+    </div>
+
+    <div class="field">
+      <label for="term">Work Term</label>
+      <input type="text" id="term" placeholder="e.g. Fall 2026">
+    </div>
+
+    <div class="preview">
+      <label>Filename preview</label>
+      <span id="filename-preview">—</span>
+    </div>
+
+    <button id="save-btn" class="btn-primary">Save as PDF</button>
+
+    <div id="status" class="status hidden"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
